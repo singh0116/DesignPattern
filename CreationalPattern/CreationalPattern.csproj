@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CorePattern\CorePattern.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AbstractFactory\" />
+    <Folder Include="Builder\" />
+    <Folder Include="FactoryMethod\" />
+    <Folder Include="Prototype\" />
+    <Folder Include="Singleton\" />
+  </ItemGroup>
+
+</Project>

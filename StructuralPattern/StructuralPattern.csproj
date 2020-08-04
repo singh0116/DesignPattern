@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CorePattern\CorePattern.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Adapter\" />
+    <Folder Include="Bridge\" />
+    <Folder Include="Composite\" />
+    <Folder Include="Decorator\" />
+    <Folder Include="Facade\" />
+    <Folder Include="Flyweight\" />
+    <Folder Include="Proxy\" />
+  </ItemGroup>
+
+</Project>
