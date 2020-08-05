@@ -1,7 +1,9 @@
-﻿namespace CreationalPattern.Singleton
+﻿[assembly: System.Resources.NeutralResourcesLanguage("en")]
+namespace CreationalPattern.Singleton
 {
     using System;
     using CorePattern.Core;
+    using CreationalPattern.Properties;
 
     /// <summary>
     /// Singleton Design Pattern
@@ -22,7 +24,7 @@
             // Confirm these are the same instance
             if (b1 == b2 && b2 == b3 && b3 == b4)
             {
-                Console.WriteLine("Same instance");
+                Console.WriteLine(Resources.IDENTICAL_OBJECT);
             }
 
             // Next, load balance 15 requests for a server

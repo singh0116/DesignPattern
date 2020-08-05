@@ -15,20 +15,20 @@
         static readonly LoadBalancer _instance = new LoadBalancer();
 
         // Type-safe generic list of servers
-        private IEnumerable<Server> _servers { get; set; }
+        private IEnumerable<AppServer> _servers { get; set; }
         private Random _random = new Random();
 
         // Note: constructor is 'private'
         private LoadBalancer()
         {
             // Load list of available servers
-            _servers = new List<Server>
+            _servers = new List<AppServer>
             {
-                new Server { IP = "192.168.0.1", Name = "Server I" },
-                new Server { IP = "192.168.0.2", Name = "Server II" },
-                new Server { IP = "192.168.0.3", Name = "Server III" },
-                new Server { IP = "192.168.0.4", Name = "Server IV" },
-                new Server { IP = "192.168.0.5", Name = "Server V" },
+                new AppServer { IP = "192.168.0.1", Name = "Server I" },
+                new AppServer { IP = "192.168.0.2", Name = "Server II" },
+                new AppServer { IP = "192.168.0.3", Name = "Server III" },
+                new AppServer { IP = "192.168.0.4", Name = "Server IV" },
+                new AppServer { IP = "192.168.0.5", Name = "Server V" },
             };
         }
 
@@ -47,7 +47,7 @@
         /// <value>
         /// The next server.
         /// </value>
-        public Server NextServer
+        public AppServer NextServer
         {
             get
             {
@@ -60,7 +60,7 @@
     /// <summary>
     /// Represents a server machine
     /// </summary>
-    public class Server
+    public class AppServer
     {
         /// <summary>
         /// Gets or sets the server name.
