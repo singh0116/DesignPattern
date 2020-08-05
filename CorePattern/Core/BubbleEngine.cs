@@ -1,8 +1,8 @@
 ﻿[assembly: System.Resources.NeutralResourcesLanguage("en")]
 namespace CorePattern.Core
 {
-    using System;
     using CorePattern.Properties;
+    using System;
 
     /// <summary>
     /// App Engine for execution of patterns

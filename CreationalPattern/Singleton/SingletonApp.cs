@@ -1,9 +1,9 @@
 ﻿[assembly: System.Resources.NeutralResourcesLanguage("en")]
 namespace CreationalPattern.Singleton
 {
-    using System;
     using CorePattern.Core;
     using CreationalPattern.Properties;
+    using System;
 
     /// <summary>
     /// Singleton Design Pattern
@@ -24,7 +24,7 @@ namespace CreationalPattern.Singleton
             // Confirm these are the same instance
             if (b1 == b2 && b2 == b3 && b3 == b4)
             {
-                Console.WriteLine(Resources.IDENTICAL_OBJECT);
+                BubbleDisplay.Info(Resources.IDENTICAL_OBJECT);
             }
 
             // Next, load balance 15 requests for a server
@@ -32,7 +32,7 @@ namespace CreationalPattern.Singleton
             for (int i = 0; i < 15; i++)
             {
                 string serverName = balancer.NextServer.Name;
-                Console.WriteLine("Dispatch request to: " + serverName);
+               BubbleDisplay.Info("Dispatch request to: " + serverName);
             }
         }
     }

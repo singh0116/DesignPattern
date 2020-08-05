@@ -120,4 +120,7 @@
   <data name="IDENTICAL_OBJECT" xml:space="preserve">
     <value>Objects are identical</value>
   </data>
+  <data name="NON_IDENTICAL_OBJECT" xml:space="preserve">
+    <value>Objects are not identical</value>
+  </data>
 </root>

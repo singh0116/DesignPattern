@@ -1,9 +1,9 @@
-﻿using CorePattern.Core;
-using CreationalPattern.Singleton;
-using System;
-
-namespace App
+﻿namespace App
 {
+    using CorePattern.Core;
+    using CreationalPattern.Prototype;
+    using CreationalPattern.Singleton;
+
     /// <summary>
     /// Main Program
     /// </summary>
@@ -15,6 +15,9 @@ namespace App
         /// <param name="args">The arguments.</param>
         static void Main(string[] args)
         {
+            // Prototype Design Pattern
+            BubbleEngine.Run(new PrototypeApp());
+
             // Singleton Design Pattern
             BubbleEngine.Run(new SingletonApp());
         }

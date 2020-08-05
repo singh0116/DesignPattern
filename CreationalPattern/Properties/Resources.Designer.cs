@@ -68,5 +68,14 @@ namespace CreationalPattern.Properties {
                 return ResourceManager.GetString("IDENTICAL_OBJECT", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Objects are not identical.
+        /// </summary>
+        internal static string NON_IDENTICAL_OBJECT {
+            get {
+                return ResourceManager.GetString("NON_IDENTICAL_OBJECT", resourceCulture);
+            }
+        }
     }
 }
