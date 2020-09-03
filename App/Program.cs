@@ -1,6 +1,8 @@
 ﻿namespace App
 {
     using CorePattern.Core;
+    using CreationalPattern.Builder;
+    using CreationalPattern.FactoryMethod;
     using CreationalPattern.Prototype;
     using CreationalPattern.Singleton;
 
@@ -15,6 +17,12 @@
         /// <param name="args">The arguments.</param>
         static void Main(string[] args)
         {
+            // Builder Design Pattern
+            BubbleEngine.Run(new BuilderApp());
+
+            // Factory Method Design Pattern
+            BubbleEngine.Run(new FactoryMethodApp());
+
             // Prototype Design Pattern
             BubbleEngine.Run(new PrototypeApp());
 

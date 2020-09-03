@@ -10,8 +10,6 @@
 
   <ItemGroup>
     <Folder Include="AbstractFactory\" />
-    <Folder Include="Builder\" />
-    <Folder Include="FactoryMethod\" />
   </ItemGroup>
 
   <ItemGroup>

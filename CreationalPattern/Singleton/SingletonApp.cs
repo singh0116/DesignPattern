@@ -3,7 +3,6 @@ namespace CreationalPattern.Singleton
 {
     using CorePattern.Core;
     using CreationalPattern.Properties;
-    using System;
 
     /// <summary>
     /// Singleton Design Pattern
@@ -32,7 +31,7 @@ namespace CreationalPattern.Singleton
             for (int i = 0; i < 15; i++)
             {
                 string serverName = balancer.NextServer.Name;
-               BubbleDisplay.Info("Dispatch request to: " + serverName);
+                BubbleDisplay.Info("Dispatch request to: " + serverName);
             }
         }
     }
